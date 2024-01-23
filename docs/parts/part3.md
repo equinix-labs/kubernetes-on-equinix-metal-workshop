@@ -61,4 +61,4 @@ On `http://86.109.9.237:31001/` URL, we should see:
 Let's take a few minutes to discuss what we did. Here are some questions to start the discussion.
 
 * How is an application deployed on a Kubernetes cluster?
-* How do we verify that the application services are running ok a Kubernetes cluster?
+* How do we verify that the application services are running ok on a Kubernetes cluster?
