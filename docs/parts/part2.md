@@ -28,7 +28,7 @@ We need a Container Network Interface (CNI) plug-in in order to run applications
 $ cp ../cluster-with-cni/* .
 ```
 
-Now we need to assign the variables used in the `module` block from the previous step with attributes it needs to run. There are multiple ways to accomplish that. For demonstration, we'll populate the `terraform.tfvars` file with the variable assignments. For more info on `terraform.tfvars`, see [`Assign values with a file`](https://developer.hashicorp.com/terraform/tutorials/configuration-language/variables#assign-values-with-a-file) documentation. For other options, see [`Customize Terraform configuration with variables`](https://developer.hashicorp.com/terraform/tutorials/configuration-language/variables)
+Now we need to assign the variables used in the `module` block located in the file `main.tf` from the previous step with attributes it needs to run. There are multiple ways to accomplish that. For demonstration, we'll populate the `terraform.tfvars` file with the variable assignments. For more info on `terraform.tfvars`, see [`Assign values with a file`](https://developer.hashicorp.com/terraform/tutorials/configuration-language/variables#assign-values-with-a-file) documentation. For other options, see [`Customize Terraform configuration with variables`](https://developer.hashicorp.com/terraform/tutorials/configuration-language/variables)
 
 Remember to assign the `metal_auth_token` and the `metal_project_id` variables with the values obtained from Part 1 of the workshop.
 
@@ -37,13 +37,16 @@ $ mv terraform.tfvars.example terraform.tfvars
 ```
 
 ```terraform
-metal_auth_token        = "your_token_here" #This must be a user API token
-metal_project_id        = "your_project_id"
-ssh_private_key_path    = "path_to_your_private_ssh_key"
-kube_vip_version        = "v0.5.9"
-kubernetes_version      = "v1.26.1"
+# This must be a user API token
+metal_auth_token        = "pUqwuRtmQ3cMZBKodr1arir5GejbFNsp"
+metal_project_id        = "16a060ea-9de3-4cd1-3601-49d38495d426"
+# Optional, where you want to store your SSH key
+kube_vip_version        = "v0.6.2"
+kubernetes_version      = "v1.28.1"
 metal_metro             = "da"
+# Optional, choose a specific flannel version, leave blank for latest
 flannel_version         = ""
+# Optional, name of a specific cloud provider. Possible values: external, YOUR_CLOUD_PROVIDER, "" (empty for internal cloud controller)
 cloud_provider_external = false
 ```
 
