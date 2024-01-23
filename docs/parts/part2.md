@@ -44,17 +44,23 @@ metal_project_id        = "16a060ea-9de3-4cd1-3601-49d38495d426"
 kube_vip_version        = "v0.6.2"
 kubernetes_version      = "v1.28.1"
 metal_metro             = "da"
-# Optional, choose a specific flannel version, leave blank for latest
-flannel_version         = ""
+# Optional, choose a specific flannel version, default is v0.24.2
+# flannel_version      = "v0.24.2"
 # Optional, name of a specific cloud provider. Possible values: external, YOUR_CLOUD_PROVIDER, "" (empty for internal cloud controller)
 cloud_provider_external = false
 ```
 
 > **_Note:_** You may build custom documentation in README.md but it does not necessarily need to be populated in order to provision infrastructure.
 
+### 3. Install the Kubernetes Command Line Tool: kubectl
+
+There are many [tools](https://kubernetes.io/docs/tasks/tools/) available to manage a Kubernetes cluster. For demonstration, we will focus on `kubectl` as our Kubernetes CLI manager of choice.
+
+To install `kubectl` on MacOS, please follow [these instructions](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/).
+
 We are ready to run Terraform to provision the kubernetes cluster!
 
-### 3. Provision Kubernetes
+### 4. Provision Kubernetes
 
 Now that we have finished building the terraform plan, we need to apply it. Let's take the same steps demonstrated in [`Part 3: Apply a Terraform Plan`](https://equinix-labs.github.io/terraform-on-equinix-workshop/parts/apply-plan/) of the the `Terraform on Equinix` workshop.
 
@@ -78,11 +84,9 @@ tfk8s_outputs = {
 }
 ```
 
-### 4. Install and Configure the Kubernetes Command Line Tool: kubectl
+### 5. Configure the Kubernetes Command Line Tool: kubectl
 
-There are many [tools](https://kubernetes.io/docs/tasks/tools/) available to manage a Kubernetes cluster. For demonstration, we will focus on `kubectl` as our Kubernetes CLI manager of choice.
-
-To install `kubectl` on MacOS, please follow [these instructions](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/). Once installed, `kubectl` sets the default config file path to `$HOME/.kube/config`. We will populate this config file with the contents of the file `kubeconfig.admin.yaml` file generate at the root of the workspace folder `my-deployment` from the previous Step 3.
+`kubectl` sets the default config file path to `$HOME/.kube/config`. We will populate this config file with the contents of the file `kubeconfig.admin.yaml` file generate at the root of the workspace folder `my-deployment` from the previous Step 3.
 
 ```shell
 $ cat kubeconfig.admin.yaml > $HOME/.kube/config

@@ -12,7 +12,7 @@ The steps below will guide you to deploy a sample app onto a Kubernetes cluster.
 In order to deploy an app into Kubernetes, we are going to need the app's deployment manifest files. For demonstration, we are going to clone the [example-voting-app](https://github.com/dockersamples/example-voting-app)
 
 ```shell
-$ git clone git@github.com:dockersamples/example-voting-app.git
+$ git clone https://github.com/dockersamples/example-voting-app.git
 ```
 
 ### 2. Deploy the sample app
