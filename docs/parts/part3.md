@@ -53,6 +53,8 @@ The `result` service is exposed on port `31001` and the `vote` service is expose
 On `http://86.109.9.237:31000/` URL, we should see:
 ![Vote dashboard screenshot](../images/vote.png)
 
+Click on the `Cats` button to cast a vote for cats.
+
 On `http://86.109.9.237:31001/` URL, we should see:
 ![Results dashboard screenshot](../images/results.png)
 
