@@ -13,6 +13,7 @@ nav:
   - Parts:
       - 1. Account and API Key Setup: parts/part1.md
       - 2. Kubernetes Deployment and Configuration: parts/part2.md
+      - 3. Deploying a Demo App: parts/part3.md
 
   - Conclusion: parts/conclusion.md
 
