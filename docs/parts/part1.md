@@ -9,9 +9,9 @@ To run this workshop you will need access to an Equinix Metal Account or create 
 The following tools will be needed on your local development environment where you will be running most of the commands in this guide:
 
 * A Unix-like environment (Linux, OSX, [Windows WSL](https://docs.microsoft.com/en-us/windows/wsl/install))
-* [git](https://git-scm.com/download/mac) (v2.0.0+)
-* [metal-cli](https://github.com/equinix/metal-cli) (v0.9.0+)
-* [terraform](https://github.com/hashicorp/terraform) (v1.0.0+)
+* [git](https://git-scm.com/download/) (v2.0.0+)
+* [metal-cli](https://deploy.equinix.com/labs/metal-cli/) (v0.9.0+)
+* [terraform](https://deploy.equinix.com/labs/terraform-on-equinix-workshop/) (v1.0.0+)
 
 ## Steps
 

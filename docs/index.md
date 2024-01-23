@@ -13,6 +13,7 @@ The goals of this workshop are:
 * Become familiar with the Equinix Metal console and tools.
 * Provision Kubernetes using Terraform.
 * Configure kubectl to manage Kubernetes.
+* Deploy an app on a Kubernetes cluster.
 
 ## Workshop agenda
 
@@ -21,6 +22,6 @@ This workshop is split into four parts:
 | Part | Title | Duration |
 | - | - | - |
 | 1 | Setup | 10 minutes |
-| 2 | Provisioning | 10 minutes |
-| 3 | Configuration | 8 minutes |
+| 2 | Configuration and Provisioning | 10 minutes |
+| 3 | Sample App Deployment | 8 minutes |
 | 4 | Conclusion | 2 minutes |
