@@ -1,15 +1,17 @@
 <!-- See https://squidfunk.github.io/mkdocs-material/reference/ -->
 # Conclusion
 
-Thank you for participating in the workshop! Let's recap some of the key takeways that we've learned:
+Thank you for participating in the workshop! Let's recap some of the key takeaways that we've learned:
 
-* ...
-* ...
-* ...
-
-## References
+* How to customize a Kubernetes deployment using a Terraform module.
+* Deploy a Kubernetes cluster with Terraform.
+* How to configure a CLI tool to manage a Kubernetes cluster.
+* How to deploy an application on a Kubernetes cluster.
 
 ## Next Steps
+
+* Deploy other applications on the Kubernetes cluster deployed in this workshop.
+* Learn how to use [`helm`](https://helm.sh/) to manage Kubernetes applications.
 
 ## Resources
 
